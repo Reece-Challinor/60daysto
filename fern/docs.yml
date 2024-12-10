@@ -1,0 +1,24 @@
+instances:
+  - url: pages.github.com
+    custom-domain: pages.github.com
+
+tabs:
+  home:
+    display-name: Home
+    icon: fa-regular fa-home
+    slug: home
+  docs:
+    display-name: Documentation
+    skip-slug: true
+    icon: duotone house
+  api:
+    display-name: API Reference
+    slug: api-reference
+    icon: duotone book-open
+
+navigation:
+  - tab: home
+    layout:
+      - page: Welcome
+        path: pages/welcome.mdx
+  - tab: docs

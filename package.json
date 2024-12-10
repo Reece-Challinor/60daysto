@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+      "fern": "^0.0.19",
+      "fern-api": "^0.42.9"
+    }
+  }
+  

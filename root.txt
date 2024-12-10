@@ -1,0 +1,90 @@
+root/
+├─ .github/
+│  ├─ ISSUE_TEMPLATE/
+│  │  ├─ bug_report.yml
+│  │  ├─ feature_request.yml
+│  └─ workflows/
+│     ├─ check.yml
+│     ├─ preview-docs.yml
+│     ├─ publish-docs.yml
+│
+├─ fern.config.json
+├─ fern/
+│  ├─ pages/
+│  │  ├─ 60-days-ml/              # Existing ML-oriented track pages
+│  │  │  ├─ days01to10.mdx
+│  │  │  ├─ days11to20.mdx
+│  │  │  ├─ ... etc.
+│  │  ├─ 60-days-aws-dev/         # New AWS developer track pages
+│  │  │  ├─ days01to10.mdx
+│  │  │  ├─ days11to20.mdx
+│  │  │  ├─ ... etc.
+│  │  ├─ guides/
+│  │  │  ├─ installation.mdx
+│  │  │  ├─ community-guidelines.mdx
+│  │  │  ├─ mlops-overview.mdx
+│  │  │  ├─ aws-overview.mdx       # Additional conceptual page for AWS fundamentals
+│  │  └─ ...
+│  │
+│  ├─ assets/ (if needed globally)
+│  ├─ snippets/ (common code snippets)
+│  ├─ overrides.yaml
+│  └─ navigation.yaml              # Defines sidebar linking to both ML and AWS tracks
+│
+├─ notebooks/
+│  ├─ 60-days-ml/
+│  │  ├─ days01-10/
+│  │  │  ├─ regression_project.ipynb
+│  │  │  ├─ data_preprocessing.ipynb
+│  │  │  ├─ assets/
+│  │  │  │  ├─ dataset_sample.csv
+│  │  │  │  └─ charts.png
+│  │  │  └─ ... (Additional scripts or templates as needed)
+│  │  ├─ days11-20/
+│  │  │  ├─ kaggle_competition_starter.ipynb
+│  │  │  └─ feature_engineering.ipynb
+│  │  ├─ ... (continue for 60 days)
+│  │  └─ README.md                 # Overview for ML track
+│  │
+│  ├─ 60-days-aws-dev/
+│  │  ├─ days01-10/
+│  │  │  ├─ days01-10.md          # MD instructions or notes for these days
+│  │  │  ├─ assets/               # Images/GIFs for docs and reference
+│  │  │  │  ├─ placeholder_gif1.gif
+│  │  │  │  ├─ placeholder_gif2.gif
+│  │  │  ├─ scripts/
+│  │  │  │  ├─ setup_iam_user.sh
+│  │  │  │  ├─ launch_ec2.sh
+│  │  │  │  └─ list_s3_buckets.py
+│  │  │  ├─ templates/
+│  │  │  │  ├─ iam_policy.json
+│  │  │  │  ├─ ec2_user_data.sh
+│  │  │  │  └─ ...additional AWS templates
+│  │  │  └─ ... (could include notebooks if needed)
+│  │  ├─ days11-20/
+│  │  │  ├─ days11-20.md
+│  │  │  ├─ assets/
+│  │  │  │  ├─ placeholder_gif1.gif
+│  │  │  ├─ lambda/
+│  │  │  │  ├─ hello_world.py
+│  │  │  │  ├─ dynamo_handler.py
+│  │  │  ├─ api/
+│  │  │  │  ├─ openapi_spec.yaml
+│  │  │  ├─ scripts/
+│  │  │  │  ├─ create_lambda.sh
+│  │  │  │  ├─ deploy_api.sh
+│  │  │  │  ├─ setup_dynamodb_table.sh
+│  │  │  │  ├─ codebuild_buildspec.yml
+│  │  │  ├─ templates/
+│  │  │  │  ├─ s3_lifecycle.json
+│  │  │  │  ├─ dynamodb_table.json
+│  │  │  │  └─ ...additional templates
+│  │  ├─ ... (continue for 60 days of AWS dev)
+│  │  └─ README.md                # Overview for AWS developer track
+│  │
+│  └─ loom-links.md               # Reference for Loom video URLs for all tracks
+│
+├─ requirements.txt               # Python dependencies for ML notebooks or general tooling
+├─ environment.yml                # Conda environment spec for local dev (ML or general use)
+├─ package.json                   # Node dependencies for Fern build and doc generation
+└─ README.md                      # Overall repo instructions, contribution guide, and how to run locally

@@ -1,21 +1,125 @@
+# Gradle files
 .gradle
 **/build/
 !src/**/build/
-
-# Ignore Gradle GUI config
 gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
-
-# Avoid ignore Gradle wrappper properties
 !gradle-wrapper.properties
-
-# Cache of project
 .gradletasknamecache
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
+# Eclipse files
 .project
-# JDT-specific (Eclipse Java Development Tools)
 .classpath
+.settings/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# VS Code files
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node.js files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.save
+*.sublime-project
+*.sublime-workspace
+
+# Compiled files
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.out
+*.app
+*.dSYM/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# Other
+.idea/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.pssproj
+*.tmp
+*.log
+*.swp
+*.swo
+*.bak
+*.orig
+*.save
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Kaggle datasets and outputs
+/input/
+/working/
+
+# Ignore large data files
+*.h5
+*.csv
+*.tsv
+*.pkl
+*.joblib
+*.parquet
+
+# Ignore data directories
+data/
+datasets/
+models/
+output/
+
+# Ignore virtual environment folders
+.env
+.venv/
+env/
+venv/

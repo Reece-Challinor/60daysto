@@ -1,6 +1,6 @@
 instances:
-  - url: nominal.docs.buildwithfern.com
-    custom-domain: docs.nominal.io
+  - url: pages.github.com
+    custom-domain: pages.github.com
 
 tabs:
   home:

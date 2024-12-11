@@ -1,24 +1,55 @@
 instances:
-  - url: pages.github.com
-    custom-domain: pages.github.com
-
-tabs:
-  home:
-    display-name: Home
-    icon: fa-regular fa-home
-    slug: home
-  docs:
-    display-name: Documentation
-    skip-slug: true
-    icon: duotone house
-  api:
-    display-name: API Reference
-    slug: api-reference
-    icon: duotone book-open
+  - url: "https://reece-challinor.github.io/60daysto/"
+    custom-domain: "https://reece-challinor.github.io/60daysto/"
 
 navigation:
-  - tab: home
-    layout:
-      - page: Welcome
-        path: pages/welcome.mdx
-  - tab: docs
+  # Single page directly under navigation:
+  - page: "Welcome"
+    path: "pages/welcome.mdx"
+
+  # A section containing multiple pages:
+  - section: "Guides"
+    contents:
+      - page: "Concepts"
+        path: "pages/concepts.mdx"
+      - page: "Another Guide"
+        path: "pages/another_guide.mdx"
+
+  # An external link:
+  - link: "GitHub Repository"
+    href: "https://github.com/Reece-Challinor/60daysto"
+
+  # A changelog entry (if you have one):
+  - changelog: "Release Notes"
+
+
+    # navigation:
+    #   - section: "Introduction"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #
+    #   - changelog: "Release Notes"
+    #   - link: "External Resource"
+    #     href: "https://example.com"
+    #   - api: "My API"
+    #   - tab: "home"
+    #     section: "Overview"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #   - tab: "docs"
+    #     section: "Guides"
+    #     contents:
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #   - section: "Introduction"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #   - page: "Welcome"
+    #     path: "pages/welcome.mdx"

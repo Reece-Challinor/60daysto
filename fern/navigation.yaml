@@ -1,0 +1,15 @@
+navigation:
+  - section: "Introduction"
+    contents:
+      - page: "pages/welcome.mdx"
+      - page: "pages/concepts.mdx"
+  - section: "Release Notes"
+    contents:
+      - page: "changelog"
+        path: "pages/changelog.mdx"
+  - link:
+      title: "External Resource"
+      href: "https://example.com"
+  - api:
+      title: "My API"
+      path: "api-reference"

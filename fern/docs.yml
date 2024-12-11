@@ -1,17 +1,15 @@
 instances:
   - url: https://reece-challinor.github.io/60daysto/
     custom-domain: https://reece-challinor.github.io/60daysto/
-
-tabs:
-  home:
-    display-name: Home
-    icon: fa-regular fa-home
-    slug: home
-  docs:
-    display-name: Documentation
-    skip-slug: true
-    icon: duotone house
-
+# tabs:
+#   home:
+#     display-name: Home
+#     icon: fa-regular fa-home
+#     slug: home
+#   docs:
+#     display-name: Documentation
+#     skip-slug: true
+#     icon: duotone house
 navigation:
   - tab: home
     layout:

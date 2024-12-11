@@ -1,27 +1,27 @@
-auth-schemes: 
-  Bearer:                     
-    scheme: bearer
-api: 
-  auth: Bearer
-  default-environment: Production
-  environments: 
-    Production: github.pages.com
-  specs: 
-    conjure: ../conjure
-groups: 
-  python-sdk:
-    generators:
-      - name: fernapi/fern-python-sdk
-        version: 4.2.8
-        output:
-          location: pypi
-          package-name: "60DaysTo"
-          # uncomment to publish to pypi
-          # token: ${PYPI_TOKEN}
-        github:
-          repository: /Reece-Challinor/60daysto
-        config:
-          client_class_name: 60DaysTo
-          pydantic_config: 
-            include_union_utils: true
-        smart-casing: true  
+# auth-schemes: 
+#   Bearer:                     
+#     scheme: bearer
+# api: 
+#   auth: Bearer
+#   default-environment: Production
+#   environments: 
+#     Production: github.pages.com
+#   specs: 
+#     conjure: ../conjure
+# groups: 
+#   python-sdk:
+#     generators:
+#       - name: fernapi/fern-python-sdk
+#         version: 4.2.8
+#         output:
+#           location: pypi
+#           package-name: "60DaysTo"
+#           # uncomment to publish to pypi
+#           # token: ${PYPI_TOKEN}
+#         github:
+#           repository: /Reece-Challinor/60daysto
+#         config:
+#           client_class_name: 60DaysTo
+#           pydantic_config: 
+#             include_union_utils: true
+#         smart-casing: true  

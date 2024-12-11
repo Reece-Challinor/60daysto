@@ -1,4 +1,9 @@
 {
-    "organization": "your-org-here",
-    "version": "00.00.01",
+  "organization": "your-org", 
+  "workspaceName": "your-workspace",
+  "generators": {
+    "docs": {
+      "output": "./path/to/docs/output"
+    }
   }
+}

@@ -1,5 +1,4 @@
 name: preview-docs
-
 on: pull_request
 
 jobs:
@@ -18,9 +17,14 @@ jobs:
         env:
           FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
         run: |
+          # Run fern generate and capture all output to handle errors gracefully
           OUTPUT=$(fern generate --docs --preview 2>&1) || true
           echo "$OUTPUT"
+
+          # Attempt to extract the preview URL from the OUTPUT if successful
+          # Typically, when success occurs, "Published docs to ..." line is printed
           URL=$(echo "$OUTPUT" | grep -oP 'Published docs to \K.*(?= \()')
+
           echo "Preview URL: $URL"
           echo "🌿 Preview your docs: $URL" > preview_url.txt
 

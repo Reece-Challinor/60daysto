@@ -1,6 +1,6 @@
 instances:
-  - url: pages.github.com
-    custom-domain: pages.github.com
+  - url: https://reece-challinor.github.io/60daysto/
+    custom-domain: https://reece-challinor.github.io/60daysto/
 
 tabs:
   home:
@@ -11,10 +11,6 @@ tabs:
     display-name: Documentation
     skip-slug: true
     icon: duotone house
-  api:
-    display-name: API Reference
-    slug: api-reference
-    icon: duotone book-open
 
 navigation:
   - tab: home

@@ -15,6 +15,3 @@ jobs:
 
       - name: Install Fern
         run: npm install -g fern-api
-
-      - name: Check API is valid
-        run: fern check

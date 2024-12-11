@@ -1,9 +1,3 @@
 {
-  "organization": "your-org", 
-  "workspaceName": "your-workspace",
-  "generators": {
-    "docs": {
-      "output": "./path/to/docs/output"
-    }
-  }
+  "version": "0.45.3"
 }

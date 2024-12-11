@@ -1,13 +1,49 @@
 instances:
   - url: https://reece-challinor.github.io/60daysto/
     custom-domain: https://reece-challinor.github.io/60daysto/
-
 navigation:
-  - title: "Welcome"
-    pages:
-      - title: "Welcome"
-        path: "pages/welcome.mdx"
-  - title: "Concepts"
-    pages:
-      - title: "Concepts"
-        path: "pages/concepts.mdx"
+  - section: "Introduction"
+    contents:
+      - page: "pages/welcome.mdx"
+      - page: "pages/concepts.mdx"
+  - section: "Release Notes"
+    contents:
+      - page: "changelog"
+        path: "pages/changelog.mdx"
+  - link:
+      title: "External Resource"
+      href: "https://example.com"
+  - api:
+      title: "My API"
+      path: "api-reference"
+
+    # navigation:
+    #   - section: "Introduction"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #
+    #   - changelog: "Release Notes"
+    #   - link: "External Resource"
+    #     href: "https://example.com"
+    #   - api: "My API"
+    #   - tab: "home"
+    #     section: "Overview"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #   - tab: "docs"
+    #     section: "Guides"
+    #     contents:
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #   - section: "Introduction"
+    #     contents:
+    #       - page: "Welcome"
+    #         path: "pages/welcome.mdx"
+    #       - page: "Concepts"
+    #         path: "pages/concepts.mdx"
+    #   - page: "Welcome"
+    #     path: "pages/welcome.mdx"

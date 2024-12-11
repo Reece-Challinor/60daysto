@@ -1,21 +1,27 @@
 instances:
-  - url: https://reece-challinor.github.io/60daysto/
-    custom-domain: https://reece-challinor.github.io/60daysto/
+  - url: "https://reece-challinor.github.io/60daysto/"
+    custom-domain: "https://reece-challinor.github.io/60daysto/"
+
 navigation:
-  - section: "Introduction"
+  # Single page directly under navigation:
+  - page: "Welcome"
+    path: "pages/welcome.mdx"
+
+  # A section containing multiple pages:
+  - section: "Guides"
     contents:
-      - page: "pages/welcome.mdx"
-      - page: "pages/concepts.mdx"
-  - section: "Release Notes"
-    contents:
-      - page: "changelog"
-        path: "pages/changelog.mdx"
-  - link:
-      title: "External Resource"
-      href: "https://example.com"
-  - api:
-      title: "My API"
-      path: "api-reference"
+      - page: "Concepts"
+        path: "pages/concepts.mdx"
+      - page: "Another Guide"
+        path: "pages/another_guide.mdx"
+
+  # An external link:
+  - link: "GitHub Repository"
+    href: "https://github.com/Reece-Challinor/60daysto"
+
+  # A changelog entry (if you have one):
+  - changelog: "Release Notes"
+
 
     # navigation:
     #   - section: "Introduction"
